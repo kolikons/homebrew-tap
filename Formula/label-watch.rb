@@ -5,20 +5,20 @@
 class LabelWatch < Formula
   desc "label-watch checks a specific label on worker node then create an label"
   homepage "https://github.com/kolikons/label-watch"
-  version "0.0.1"
+  version "0.0.2-rc1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kolikons/label-watch/releases/download/v0.0.1/label-watch_0.0.1_darwin_amd64.tar.gz"
-      sha256 "67245838895ff07aac9ad16d26a30978075ec079de1288952b1d87f5c04d2040"
+      url "https://github.com/kolikons/label-watch/releases/download/v0.0.2-rc1/label-watch_0.0.2-rc1_darwin_amd64.tar.gz"
+      sha256 "05598a1b44f8c9c9e31426350a9920ea9bd91786b4328e83664617db25a9e6d2"
 
       def install
         bin.install "label-watch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kolikons/label-watch/releases/download/v0.0.1/label-watch_0.0.1_darwin_arm64.tar.gz"
-      sha256 "84414e13b2305e7d5585333e3cc95bc4c369536fb1d43e6f99ae18f892a03297"
+      url "https://github.com/kolikons/label-watch/releases/download/v0.0.2-rc1/label-watch_0.0.2-rc1_darwin_arm64.tar.gz"
+      sha256 "5afc915f15ccc7ad1bcb0fca25c06f3bc799d13b2ae21c39ae42d732360008ac"
 
       def install
         bin.install "label-watch"
@@ -28,8 +28,8 @@ class LabelWatch < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/kolikons/label-watch/releases/download/v0.0.1/label-watch_0.0.1_linux_amd64.tar.gz"
-      sha256 "771803be26c7ea2283b35aa1021e64578d3582bb0dbca4c74d49cda8b95abb43"
+      url "https://github.com/kolikons/label-watch/releases/download/v0.0.2-rc1/label-watch_0.0.2-rc1_linux_amd64.tar.gz"
+      sha256 "e3daca21e006c5b75ec2587e01bc9185167550aab4ddfebfb4e92dfacfd1a0bc"
 
       def install
         bin.install "label-watch"
